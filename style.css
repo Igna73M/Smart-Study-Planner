@@ -1,0 +1,127 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f0fdfa;
+  margin: 0;
+  padding: 0;
+  color: #083344;
+}
+header {
+  background: #134e4a;
+  color: #fff;
+  padding: 1rem;
+}
+header h1 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+.controls input,
+.controls select,
+.controls button {
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+.task-list {
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+.task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem;
+  border-bottom: 1px solid #ddd;
+}
+.task:last-child {
+  border-bottom: none;
+}
+.task .info {
+  flex: 1;
+  margin-left: 0.5rem;
+}
+.task .info .title {
+  font-weight: bold;
+  color: #065f46;
+}
+.task .info .meta {
+  font-size: 0.8rem;
+  color: #555;
+}
+.task button {
+  margin-left: 0.25rem;
+  background: #10b981;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 0.3rem 0.6rem;
+  cursor: pointer;
+}
+.task button:hover {
+  background: #059669;
+}
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+.modal-content {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 500px;
+}
+.notes-editor {
+  min-height: 120px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+}
+#calendar {
+  margin-top: 1.5rem;
+  background: #fff;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+#calendar h2 {
+  margin-top: 0;
+}
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 0.5rem;
+}
+.day {
+  background: #e0f2f1;
+  border-radius: 6px;
+  padding: 0.5rem;
+  min-height: 60px;
+  font-size: 0.8rem;
+}
+.day.due {
+  background: #fde68a;
+}
+.day.completed {
+  background: #bbf7d0;
+}
